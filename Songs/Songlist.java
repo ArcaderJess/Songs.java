@@ -6,6 +6,7 @@ public class Songlist {
      */
     public static void main(String[] args)
     {
+      int num;
       Artist twrp = new Artist(name: "TWRP", title: "Life Party", playsnumber: 2472740);
       //twrp.print();
       
