@@ -3,14 +3,16 @@ import javax.management.ConstructorParameters;
 public class Songs {
     private int id;
     private String name;
+    private String title;
+    private int playsnumber;
 
     //Constructor
     /**
     * @ConstructorParameters artist
     * @ConstructorParameters songname
     * @ConstructorParameters plays
-
-    public Artist(String name, String title, int playsnumber)
+*/
+    public Songs(String name, String title, int playsnumber)
 {
     this.name = name;
     this.title = title;
