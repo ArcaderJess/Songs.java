@@ -1,42 +1,44 @@
 import java.util.ArrayList;
 
+import helpers.InputReader;
 public class Songlist {
     /**
      * @param args
      */
-    public static void main(String[] args)
+     public static final String CONSOLE_CLEAR = "\033[H\033[2J";
+     public static void main(String[] args)
     {
       int num;
       String name;
       String title;
-      Songs twrp = new Songs(name: "TWRP", title: "Life Party", playsnumber: 2472740);
+      Songs twrp = new Songs("TWRP", "Life Party", 2472740);
       //twrp.print();
       
-      Songs franksinatra = new Songs(name: "Frank Sinatra", title: "Fly me to the Moon", playsnumber: 484812195);
+      Songs franksinatra = new Songs("Frank Sinatra", "Fly me to the Moon", 484812195);
       //franksinatra.print()
 
-      Songs talkingheads = new Songs(name: "Talking Heads", title: "This Must be the Place", playsnumber: 202693802);
+      Songs talkingheads = new Songs("Talking Heads", "This Must be the Place", 202693802);
       //talkingheads.print()
 
-      Songs ladygaga = new Songs(name: "Lady Gaga", title: "Judas", playsnumber: 224037234);
+      Songs ladygaga = new Songs("Lady Gaga","Judas", 224037234);
       //ladygaga.print()
 
-      Songs grimes = new Songs(name: "Grimes", title: "Kill V. Maim", playsnumber: 83442560);
+      Songs grimes = new Songs("Grimes", "Kill V. Maim", 83442560);
       //grimes.print()
 
-      Songs thecure = new Songs(name: "The Cure", title: "Inbetween Days", playsnumber: 105663397);
+      Songs thecure = new Songs("The Cure", "Inbetween Days", 105663397);
       //thecure.print()
 
-      Songs billyjoel = new Songs(name: "Billy Joel", title: "We Didn't Start the Fire", playsnumber: 350593931);
+      Songs billyjoel = new Songs("Billy Joel", "We Didn't Start the Fire", 350593931);
       //billyjoel.print()
 
-      Songs theclash = new Songs(name: "The Clash", title: "Rock the Casbah", playsnumber: 254724248);
+      Songs theclash = new Songs("The Clash", "Rock the Casbah", 254724248);
       //theclash.print()
 
-      Songs madonna = new Songs(name: "Madonna", title: "Material Girl", playsnumber: 294746541);
+      Songs madonna = new Songs("Madonna", "Material Girl",294746541);
       //madonna.print()
 
-      Songs thejam = new Songs(name: "The Jam", title: "Town Called Malice", playsnumber: 151484590);
+      Songs thejam = new Songs("The Jam", "Town Called Malice", 151484590);
       //thejam.print()
 
 
@@ -56,7 +58,14 @@ public class Songlist {
        {
         artist.print();
        } 
-       
+
+       String song = InputReader.getString("Enter song name > ");
+       String artists = InputReader.getString("Enter artist name > ");
+       int plays = InputReader.getInt("Enter your number of plays > ");
+       System.out.println("Song name " + song);
+       System.out.println("Artist name " + artist);
+       System.out.println("Number of plays " + plays);
+
     }
 
 }
