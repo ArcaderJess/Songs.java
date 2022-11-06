@@ -1,7 +1,6 @@
-import javax.management.ConstructorParameters;
+
 
 public class Songs {
-    private int id;
     private String name;
     private String title;
     private int playsnumber;
