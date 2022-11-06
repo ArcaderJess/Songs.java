@@ -1,7 +1,45 @@
 import java.util.ArrayList;
 
-import helpers.InputReader;
-public class Songlist {
+
+public class Songlist
+ {
+  System.out.println("Jess' Song list");
+  System.out.println();
+
+}
+
+public static void showMenu()
+
+{
+  System.out.println("=========");
+  System.out.println("Menu");
+  System.out.println("=========");
+  System.out.println("1) View Song List");
+  System.out.println("2) View Songs in Order of Plays");
+  System.out.println("3) Add Song");
+  System.out.println("4) Remove Song");
+  System.out.println("=========");
+
+  int choice = InputReader.getInt("Menu Number- ");
+  if(choice == 1);
+  {
+    print();
+  }
+  if(choice ==2);
+  {
+    getCount();
+  }
+  if(choice ==3);
+  {
+    getName();
+  }
+  if(choice ==4);
+  {
+    
+  }
+}
+
+
     /**
      * @param args
      */
@@ -53,19 +91,22 @@ public class Songlist {
        artist.add(theclash);
        artist.add(madonna);
        artist.add(thejam);
-      
-       for(Songs artists : artist)
-       {
-        artist.print();
-       } 
-
-       String song = InputReader.getString("Enter song name > ");
-       String artists = InputReader.getString("Enter artist name > ");
-       int plays = InputReader.getInt("Enter your number of plays > ");
-       System.out.println("Song name " + song);
-       System.out.println("Artist name " + artist);
-       System.out.println("Number of plays " + plays);
-
     }
+      
+    public static void print()
+
+       {
+        for (Song current : songlist)
+        {
+          current.print();
+        }
+       } 
+public static void getName()
+
+       {
+
+      }
+
+      }
 
 }
