@@ -28,4 +28,10 @@ public void print ()
     System.out.println("Number of Plays: " + this.playsnumber);
     
 }
+public int getplaysnumber()
+{
+    return this.playsnumber;
+}
+
+
 }

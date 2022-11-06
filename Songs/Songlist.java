@@ -3,6 +3,10 @@ import java.util.ArrayList;
 
 public class Songlist
  {
+  public static ArrayList<Songs> songslist;
+ 
+
+ {
   System.out.println("Jess' Song list");
   System.out.println();
 
@@ -27,12 +31,12 @@ public static void showMenu()
   }
   if(choice ==2);
   {
-    getCount();
+    getplaysnumber();
   }
   if(choice ==3);
-  {
-    getName();
-  }
+{
+  
+}
   if(choice ==4);
   {
     
@@ -43,12 +47,10 @@ public static void showMenu()
     /**
      * @param args
      */
-     public static final String CONSOLE_CLEAR = "\033[H\033[2J";
+     public static ArrayList<Songs> songs;
      public static void main(String[] args)
     {
-      int num;
-      String name;
-      String title;
+    
       Songs twrp = new Songs("TWRP", "Life Party", 2472740);
       //twrp.print();
       
@@ -96,7 +98,7 @@ public static void showMenu()
     public static void print()
 
        {
-        for (Song current : songlist)
+        for (Songs current : songs)
         {
           current.print();
         }
@@ -104,9 +106,15 @@ public static void showMenu()
 public static void getName()
 
        {
+String newsong;
+newsong = InputReader.getString("Enter Artist Name- ");
+newsong = InputReader.getString("Enter Song Name- ");
+System.out.println(newsong + songs);
 
+      }
+      public static void getplaysnumber()
+      {
+        for(Songs current : songs);
       }
 
       }
-
-}
