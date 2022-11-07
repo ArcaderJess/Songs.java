@@ -52,34 +52,34 @@ public static void showMenu()
     {
     
       Songs twrp = new Songs("TWRP", "Life Party", 2472740);
-      //twrp.print();
+      twrp.print();
       
       Songs franksinatra = new Songs("Frank Sinatra", "Fly me to the Moon", 484812195);
-      //franksinatra.print()
+      franksinatra.print();
 
       Songs talkingheads = new Songs("Talking Heads", "This Must be the Place", 202693802);
-      //talkingheads.print()
+      talkingheads.print();
 
       Songs ladygaga = new Songs("Lady Gaga","Judas", 224037234);
-      //ladygaga.print()
+      ladygaga.print();
 
       Songs grimes = new Songs("Grimes", "Kill V. Maim", 83442560);
-      //grimes.print()
+      grimes.print();
 
       Songs thecure = new Songs("The Cure", "Inbetween Days", 105663397);
-      //thecure.print()
+      thecure.print();
 
       Songs billyjoel = new Songs("Billy Joel", "We Didn't Start the Fire", 350593931);
-      //billyjoel.print()
+      billyjoel.print();
 
       Songs theclash = new Songs("The Clash", "Rock the Casbah", 254724248);
-      //theclash.print()
+      theclash.print();
 
       Songs madonna = new Songs("Madonna", "Material Girl",294746541);
-      //madonna.print()
+      madonna.print();
 
       Songs thejam = new Songs("The Jam", "Town Called Malice", 151484590);
-      //thejam.print()
+      thejam.print();
 
 
       ArrayList<Songs> artist = new ArrayList<Songs>();
