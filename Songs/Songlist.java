@@ -114,7 +114,7 @@ System.out.println(newsong + songs);
       }
       public static void getplaysnumber()
       {
-        for(Songs current : songs);
+        for(Songs song : songs);
       }
 
       }
